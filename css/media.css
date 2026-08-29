@@ -12,6 +12,12 @@
   }
 }
 
+@media (width < 860px) {
+  #date,
+  #time {
+    width: 70px;
+  }
+}
 @media (width > 860px) {
   #date,
   #time {
