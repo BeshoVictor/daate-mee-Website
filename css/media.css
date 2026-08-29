@@ -12,7 +12,7 @@
   }
 }
 
-@media (width > 766px) {
+@media (width > 850px) {
   #date,
   #time {
     width: 150px;
