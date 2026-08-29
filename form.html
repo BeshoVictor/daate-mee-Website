@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Date Me</title>
+    <title>When to meet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,22 +22,33 @@
       <div
         class="content col-8 col-md-6 rounded-5 shadow-lg secondary-bg-color d-flex flex-column justify-content-center align-items-center p-3 p-md-5"
       >
-        <h1 class="display-4 text-center fw-bold my-5">
-          Would You Like To Date Me, Baby?
+        <h1 class="question display-5 text-center fw-bold mt-5">
+          I Knew You Fell For Me😉
         </h1>
-        <div class="response-container row w-100 d-flex my-5">
-          <div class="yes-container col-6 text-center">
-            <a
-              href="form.html"
-              class="yes fw-bold display-5 yes-no-color text-decoration-none"
-            >
-              Yes
-            </a>
+        <h2 class="question2 display-6 text-center">
+          When Would You Like to Date?
+        </h2>
+        <form
+          action="see-you.html"
+          class="w-100 d-flex flex-column gap-5 justify-content-center align-items-center"
+        >
+          <div
+            class="inputs d-flex gap-3 gap-md-5 justify-content-center align-content-center"
+          >
+            <div class="date-input d-flex flex-column">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </div>
+
+            <div class="time-input d-flex flex-column">
+              <label for="time">Time</label>
+              <input type="time" id="time" />
+            </div>
           </div>
-          <div class="no-container col-6 text-center">
-            <p class="no fw-bold display-5 yes-no-color">No</p>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-outline-danger w-md-25">
+            Let's Meet 💌
+          </button>
+        </form>
       </div>
     </section>
 

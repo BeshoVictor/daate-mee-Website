@@ -1,12 +1,78 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: var(--main-font);
+  box-sizing: border-box;
 }
 
 :root {
   --main-font: "Butterfly Kids", cursive;
+  --main-bg-color: #e18181;
+  --secondary-bg-color: #ffbebe;
 }
-
 .main-font {
   font-family: var(--main-font);
+}
+.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.yes-no-color {
+  color: brown;
+}
+
+.no {
+  transition: all 0.2s ease;
+}
+
+.no::after {
+  content: "🤬";
+  display: none;
+}
+
+.no-container:hover .no {
+  transform: translate(-100px, 110px);
+}
+
+.no-container:hover .no::after {
+  display: inline;
+}
+
+.yes-container {
+  transition: all 0.2s ease;
+}
+
+.yes {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.yes-container:hover {
+  transform: scale(2);
+}
+.yes-container:hover .yes {
+  background-color: #e18181;
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 3px solid brown;
+}
+
+#date,
+#time {
+  background-color: var(--secondary-bg-color);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+label {
+  color: var(--main-bg-color);
+  font-weight: bold;
+}
+
+.see-you {
+  color: brown;
 }
