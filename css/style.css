@@ -71,6 +71,7 @@
 label {
   color: var(--main-bg-color);
   font-weight: bold;
+  font-size: 25px;
 }
 
 .see-you {
